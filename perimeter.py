@@ -16,14 +16,17 @@ def perimeter_decagon(int_side):
 
 def main():
     # input
-    str_side = input("Enter a side of the decagon: ")
+    while True:
+        str_side = input("Enter a side of the decagon: ")
 
-    try:
-        int_side = int(str_side)
+        try:
+            int_side = int(str_side)
+        except ValueError:
+            print("Invalid integer.")
         # call functions
-        perimeter_decagon(int_side)
-    except ValueError:
-        print("Invalid integer.")
+        else:
+            perimeter_decagon(int_side)
+            break
 
     print("\nDone.")
 
