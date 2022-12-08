@@ -46,9 +46,6 @@
                 <mxCell id="23" value="user inputs&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="140" y="290" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="28" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="1070" y="1110" width="40" height="20" as="geometry"/>
-                </mxCell>
                 <mxCell id="34" value="print output" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="520" y="260" width="120" height="60" as="geometry"/>
                 </mxCell>
