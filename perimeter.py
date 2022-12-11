@@ -5,28 +5,31 @@
 # This program determines the perimeter of a decagon
 
 
-def perimeter_decagon(int_side):
+def calculate_perimeter(int_side):
 
-    # process
-    perimeter = 10 * int_side
+    if int_side <= 0 :
+        perimeter = float(-1)
+        return perimeter
+    else:
+        perimeter = float(int_side * 10)
+        return perimeter
 
-    # output
-    print("The perimeter is: {0} cm.".format(perimeter))
 
 
 def main():
     # input
-    while True:
-        str_side = input("Enter a side of the decagon: ")
+    str_side = input("Enter a side of the decagon (cm):")
 
-        try:
-            int_side = int(str_side)
-        except ValueError:
-            print("Invalid integer.")
+    try:
+        str_side = float(str_side)
         # call functions
+        perimeter = calculate_perimeter(str_side)
+        if perimeter == -1:
+            print("That is an invalid input.")
         else:
-            perimeter_decagon(int_side)
-            break
+            print("The perimeter of the decagon is: {0} cm.".format(perimeter))
+    except ValueError:
+        print("That is an invalid input.")
 
     print("\nDone.")
 
