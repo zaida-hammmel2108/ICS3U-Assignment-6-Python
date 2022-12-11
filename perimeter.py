@@ -7,13 +7,12 @@
 
 def calculate_perimeter(int_side):
 
-    if int_side <= 0 :
+    if int_side <= 0:
         perimeter = float(-1)
         return perimeter
     else:
         perimeter = float(int_side * 10)
         return perimeter
-
 
 
 def main():
